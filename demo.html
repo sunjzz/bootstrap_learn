@@ -6,20 +6,107 @@
     <title>Title</title>
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .col-md-4 {
+            border: solid 1px red;
+            background-color: #cccccc;
+        }
+
+        .col-md-2 {
+            border: solid 1px red;
+            background-color: #cccccc;
+        }
+
+        .col-md-6 {
+            border: solid 1px red;
+            background-color: #cccccc;
+        }
+
+        .wrapper {
+        . make-row();
+        }
+
+        .content-main {
+        . make-lg-column(8);
+        }
+
+        .content-secondary {
+        . make-lg-column(3);
+        . make-lg-column-offset(1);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">Column 1</div>
-            <div class="col-md-4">Column 2</div>
-            <div class="col-md-4">Column 3</div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">Column 1</div>
-            <div class="col-md-6">Column 2</div>
-            <div class="col-md-4">Column 3</div>
-        </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">Column 1</div>
+        <div class="col-md-4">Column 2</div>
+        <div class="col-md-4">Column 3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Column 1</div>
+        <div class="col-md-6">Column 2</div>
+        <div class="col-md-4">Column 3</div>
+    </div>
 
+</div>
+    <div class="wrapper container">
+        <div class="content-main"><h1>Demo <small>context</small></h1></div>
+        <div class="content-secondary"><h2>Demo <small>context</small></h2></div>
+
+        <p>
+            ,nk<s>jnlknl</s>nmlnlkj
+        </p>
+        <p class="lead">
+            fjdlajfld<mark>sajl</mark>fdjsa
+        </p>
+        <p class="text-capitalize">
+            oituir<del>owtr</del>oewntrew
+        </p>
+    </div>
+    <div class="container table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>1</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+                <tr class="success">
+                    <td>2</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+                <tr class="warning">
+                    <td>3</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+                <tr class="danger">
+                    <td>4</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+                <tr class="info">
+                    <td>5</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                    <td>Column heading</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
